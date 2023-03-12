@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+button {
+	margin-top: 20px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+small {
+	display: block;
+}
+
+.with-error {
+	border-color: red;
+}
+
+.error-msg {
+	color: red;
+}
