@@ -27,7 +27,7 @@ export function Signin() {
 		}
 		fetchData();
 	}
-	if (response) {
+	if (response && !error) {
 		storeData("user", response.data);
 		navigate("/");
 	}

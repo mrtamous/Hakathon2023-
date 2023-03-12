@@ -11,7 +11,7 @@ export const useFetch = (url, options) => {
 				...options,
 			});
 			const data = await res.json();
-			if (data.statusCode == 400) throw new Error(data.message);
+			if (data.statusCode !== 200) throw new Error(data.message);
 			setResponse(data);
 		} catch (error) {
 			setError(error.message);
