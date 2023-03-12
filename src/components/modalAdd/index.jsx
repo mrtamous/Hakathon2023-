@@ -60,6 +60,7 @@ export default function ModalAdd({ isOpen, closeModal, handleAdd }) {
       };
       handleAdd(addedObj);
       closeModal();
+      setFormData({ post: "", image: "" });
     }
   }, [response]);
 
